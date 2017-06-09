@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
+    <meta property="og:title" content="{{ .Site.Title }}" />
+    {{ if .Site.Params.description }}
+    <meta name="description" content="{{ .Site.Params.description }}">
+    <meta property="og:description" content="{{ .Site.Params.description }}" />
+    {{ end }}
+    <meta property="og:image" content="{{ .Site.BaseURL }}img/TODO.jpg" />
+    {{ .Hugo.Generator }}
+    <title>
+      {{ if .IsHome }}
+        {{- .Site.Title -}}
+      {{ else }}
+        {{- .Title " | " .Site.Title -}}
+      {{ end }}
+    </title>
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style.css" />
+  </head>

@@ -1,0 +1,18 @@
+name = "Highlighter"
+license = "MIT"
+licenselink = "https://github.com/robrem/highlighter/blob/master/LICENSE.md"
+description = "Personal portfolio site theme, powered by Hugo"
+homepage = "https://github.com/robrem/highlighter"
+tags = []
+features = []
+min_version = "0.20.7"
+
+[author]
+  name = "Rob Remington"
+  homepage = "https://github.com/robrem"
+
+# If porting an existing theme
+[original]
+  name = ""
+  homepage = ""
+  repo = ""
