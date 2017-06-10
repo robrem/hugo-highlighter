@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ .Site.LanguageCode }}">
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
     <meta property="og:title" content="{{ .Site.Title }}" />
@@ -22,4 +22,8 @@
     <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicons/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="{{ .Site.BaseURL }}img/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/style.css" />
+    {{ `<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->` | safeHTML }}
   </head>

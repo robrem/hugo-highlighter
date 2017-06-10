@@ -1,0 +1,10 @@
+{{ partial "head" . }}
+  <body>
+    <main>
+      <section id="about">
+        <h1>I'm {{ Sites.Params.author }}, a {{ Sites.Params.job_title }}.</h1>
+        {{ .Content }}
+      </section>
+    </main>
+  </body>
+</html>
