@@ -1,8 +1,8 @@
-<nav>
+<nav id="main-menu" aria-label="Main menu">
   <ul>
     {{ if .Site.Menus.main }}
       {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+      <li><a href="{{ .URL }}" class="highlight-link">{{ .Name }}</a></li>
       {{ end }}
     {{ end }}
   </ul>
