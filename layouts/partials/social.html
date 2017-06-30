@@ -1,0 +1,22 @@
+<div class="social">
+  {{ if .Site.Params.Social.github }}
+    <a href="https://github.com/{{ .Site.Params.Social.github }}" aria-label="Link to my Github account">
+      <i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i>
+    </a>
+  {{ end }}
+  {{ if .Site.Params.Social.linkedin }}
+    <a href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedin }}" aria-label="Link to my LinkedIn account">
+      <i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i>
+    </a>
+  {{ end }}
+  {{ if .Site.Params.Social.twitter }}
+    <a href="https://twitter.com/{{ .Site.Params.Social.twitter }}" aria-label="Link to my Twitter account">
+      <i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i>
+    </a>
+  {{ end }}
+  {{ if .Site.Params.Social.email }}
+    <a href="mailto:{{ .Site.Params.Social.email }}" aria-label="Send an email to me">
+      <i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i>
+    </a>
+  {{ end }}
+</div>
