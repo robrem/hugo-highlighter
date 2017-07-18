@@ -1,9 +1,22 @@
 <nav id="main-menu" aria-label="Main menu">
-  <ul>
-    {{ if .Site.Menus.main }}
-      {{ range .Site.Menus.main }}
-      <li><a href="{{ .URL }}" class="highlight-link">{{ .Name }}</a></li>
+  <div class="row">
+    <div class="one-half column">
+      <ul>
+        {{ if .Site.Menus.main }}
+          {{ range .Site.Menus.main }}
+          <li><a href="{{ .URL }}" class="highlight-link">{{ .Name }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+    </div>
+    <div class="one-half column">
+      {{ if .Site.Params.home_link }}
+      <div class="home-link">
+        <a href="{{ .Site.BaseURL }}" class="home-link highlight-link">
+          <span>//</span>{{ .Site.Params.home_link }}
+        </a>
+      </div>
       {{ end }}
-    {{ end }}
-  </ul>
+    </div>
+  </div>
 </nav>

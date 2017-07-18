@@ -1,22 +1,31 @@
-<div class="social">
-  {{ if .Site.Params.Social.github }}
-    <a href="https://github.com/{{ .Site.Params.Social.github }}" aria-label="Link to my Github account">
+<div class="btn-group">
+<!--   {{ if .Site.Params.email }}
+    <a class="btn" href="/" aria-label="Send an email to me">
+      Email me
+    </a>
+  {{ end }} -->
+  {{ if .Site.Params.github }}
+    <a class="btn btn-icon" href="https://github.com/{{ .Site.Params.github }}" aria-label="Link to my Github account">
       <i class="fa fa-github fa-fw fa-lg" aria-hidden="true"></i>
+      <span class="btn-label">Link to my Github account</span>
     </a>
   {{ end }}
-  {{ if .Site.Params.Social.linkedin }}
-    <a href="https://www.linkedin.com/in/{{ .Site.Params.Social.linkedin }}" aria-label="Link to my LinkedIn account">
+  {{ if .Site.Params.linkedin }}
+    <a class="btn btn-icon" href="https://www.linkedin.com/in/{{ .Site.Params.linkedin }}" aria-label="Link to my LinkedIn account">
       <i class="fa fa-linkedin fa-fw fa-lg" aria-hidden="true"></i>
+      <span class="btn-label">Link to my LinkedIn account</span>
     </a>
   {{ end }}
-  {{ if .Site.Params.Social.twitter }}
-    <a href="https://twitter.com/{{ .Site.Params.Social.twitter }}" aria-label="Link to my Twitter account">
+  {{ if .Site.Params.twitter }}
+    <a class="btn btn-icon" href="https://twitter.com/{{ .Site.Params.twitter }}" aria-label="Link to my Twitter account">
       <i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i>
+      <span class="btn-label">Link to my Twitter account</span>
     </a>
   {{ end }}
-  {{ if .Site.Params.Social.email }}
-    <a href="mailto:{{ .Site.Params.Social.email }}" aria-label="Send an email to me">
+  {{ if .Site.Params.email }}
+    <a class="btn btn-icon" href="mailto:{{ .Site.Params.email }}" aria-label="Send an email to me">
       <i class="fa fa-envelope fa-fw fa-lg" aria-hidden="true"></i>
+      <span class="btn-label">Send an email to me</span>
     </a>
   {{ end }}
 </div>
