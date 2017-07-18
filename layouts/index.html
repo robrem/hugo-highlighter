@@ -1,17 +1,15 @@
 {{ partial "head" . }}
-
-      <div class="outer-container">
-        <div class="container">
-          <div class="row">
-            <div class="seven columns">
-              {{ if .Params.intro }}
-              <p class="intro">{{ .Params.intro }}</p>
-              {{ end }}
-              {{ .Content }}
-            </div>
-          </div>
-          {{ partial "social" . }}
-        </div>
+<main class="outer-container">
+  <div class="container">
+    <div class="row">
+      <div class="seven columns">
+        {{ if .Params.intro }}
+        <p class="intro">{{ .Params.intro }}</p>
+        {{ end }}
+        {{ .Content }}
       </div>
-
+    </div>
+    {{ partial "social" . }}
+  </div>
+</main>
 {{ partial "footer" . }}
